@@ -32,7 +32,7 @@ class Luarocks < Formula
     Rocks are installed to: #{HOMEBREW_PREFIX}/lib/luarocks/rocks
 
     A configuration file has been placed at #{HOMEBREW_PREFIX}/etc/luarocks
-    which you can use to specify additional dependency paths as desired.    
+    which you can use to specify additional dependency paths as desired.
     See: http://luarocks.org/en/Config_file_format
     EOS
   end
