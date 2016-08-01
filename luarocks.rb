@@ -1,7 +1,7 @@
 class Luarocks < Formula
   homepage "http://luarocks.org"
-  url "http://luarocks.org/releases/luarocks-2.2.1.tar.gz"
-  sha256 "713f8a7e33f1e6dc77ba2eec849a80a95f24f82382e0abc4523c2b8d435f7c55"
+  url "http://luarocks.org/releases/luarocks-2.3.0.tar.gz"
+  sha256 "68e38feeb66052e29ad1935a71b875194ed8b9c67c2223af5f4d4e3e2464ed97"
 
   head "https://github.com/keplerproject/luarocks.git"
 
@@ -21,8 +21,7 @@ class Luarocks < Formula
     args = ["--prefix=#{prefix}",
             "--rocks-tree=#{HOMEBREW_PREFIX}",
             "--sysconfdir=#{etc}/luarocks",
-            "--with-lua=#{lua_prefix}",
-            "--lua-version=5.2"]
+            "--with-lua=#{lua_prefix}"]
 
     system "./configure", *args
     system "make", "build"
@@ -33,7 +32,7 @@ class Luarocks < Formula
     Rocks are installed to: #{HOMEBREW_PREFIX}/lib/luarocks/rocks
 
     A configuration file has been placed at #{HOMEBREW_PREFIX}/etc/luarocks
-    which you can use to specify additional dependency paths as desired.
+    which you can use to specify additional dependency paths as desired.    
     See: http://luarocks.org/en/Config_file_format
     EOS
   end
